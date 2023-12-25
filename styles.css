@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+body {
+    background-color: black;
+}
+.quote-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 70vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    float: left;
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    background-size: cover;
+    overflow: hidden;
+    object-fit: cover; 
+    margin-top: 9em;
+
+}
+.quote-text-div {
+    margin-top: 2em;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 1em;
+}
+cite {
+    text-align: right;
+    padding-top: 1rem;
+}
+
+button {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    border-radius: 1em;
+    padding: 1em;
+    position: fixed;
+    top: 2em;
+    width: 60%;
+    /* max-width: 40%; */
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+@media (min-width: 900px)
+{
+    img {
+        max-width: 40%;
+        margin-right: 2em;
+        max-height: 70vh;
+    }
+    .quote-text-div {
+        font-size: 2rem;
+        max-width: 55%;
+        margin-top: 4.5em;
+    }
+    button {
+        width: 40%;
+    /* max-width: 40%; */
+    margin-left: 30%;
+    margin-right: 30%;
+    }
+}
+@media (min-width: 500px) and (max-width: 899px)
+{
+    body {
+        background-color: blue;
+    }
+    img {
+        max-width: 60%;
+        max-height: 60vh;
+    }
+    .quote-text-div {
+        margin-top: 0.5em;
+        font-size: 1.2em;
+    }
+    button {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
